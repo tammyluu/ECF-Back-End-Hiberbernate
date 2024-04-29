@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <mapping class="entities.ClassRoom" />
+        <mapping class="entities.Departement" />
+        <mapping class="entities.Professor"/>
+        <mapping class="entities.Schedule"/>
+        <mapping class="entities.Score"/>
+        <mapping class="entities.Student"/>
+        <mapping class="entities.Subject"/>
+
+        <mapping class="daoImpl.ClassDAO"/>
+        <mapping class="daoImpl.ProfessorDAO"/>
+        <mapping class="daoImpl.DepartementDAO"/>
+        <mapping class="daoImpl.StudentDAO"/>
+        <mapping class="daoImpl.ScoreDAO"/>
+        <mapping class="daoImpl.ScheduleDAO"/>
+        <mapping class="daoImpl.SubjectDAO"/>
+
+        <mapping class="services.DepartementService"/>
+        <mapping class="services.ProfessorService"/>
+        <mapping class="services.ClassService"/>
+        <mapping class="services.ScheduleService"/>
+        <mapping class="services.ScoreService"/>
+        <mapping class="services.SubjectService"/>
+        <mapping class="services.StudentService"/>
+
+
+
+
+    </session-factory>
+
+</hibernate-configuration>
